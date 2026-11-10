@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Vidhyadan Academy | Palothar</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: #f5f8ff;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    /* NAVBAR */
+    nav {
+      background: #073b8c;
+      color: white;
+      padding: 15px 7%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .logo {
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    .logo span {
+      color: #ffd43b;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 25px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    nav ul li a:hover {
+      color: #ffd43b;
+    }
+
+    /* HERO */
+    .hero {
+      min-height: 90vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 30px;
+      background:
+        linear-gradient(rgba(7,59,140,.82), rgba(7,59,140,.82)),
+        url("school.jpg");
+      background-size: cover;
+      background-position: center;
+      color: white;
+    }
+
+    .hero h1 {
+      font-size: 55px;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      font-size: 21px;
+      margin-bottom: 25px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #ffd43b;
+      color: #111;
+      padding: 12px 25px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 5px;
+    }
+
+    .btn:hover {
+      background: white;
+    }
+
+    /* SECTIONS */
+    section {
+      padding: 70px 8%;
+    }
+
+    .section-title {
+      text-align: center;
+      color: #073b8c;
+      font-size: 34px;
+      margin-bottom: 35px;
+    }
+
+    /* ABOUT */
+    .about {
+      display: flex;
+      gap: 40px;
+      align-items: center;
+    }
+
+    .about-text {
+      flex: 1;
+    }
+
+    .about-text h3 {
+      color: #073b8c;
+      font-size: 27px;
+      margin-bottom: 15px;
+    }
+
+    .about-img {
+      flex: 1;
+    }
+
+    .about-img img {
+      width: 100%;
+      border-radius: 15px;
+    }
+
+    /* CARDS */
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+    }
+
+    .card {
+      background: white;
+      padding: 30px;
+      text-align: center;
+      border-radius: 15px;
+      box-shadow: 0 5px 20px rgba(0,0,0,.08);
+    }
+
+    .card h3 {
+      color: #073b8c;
+      margin-bottom: 10px;
+    }
+
+    .icon {
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+
+    /* NOTICE */
+    .notice-box {
+      max-width: 800px;
+      margin: auto;
+      background: white;
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0 5px 20px rgba(0,0,0,.08);
+    }
+
+    .notice {
+      padding: 15px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .notice:last-child {
+      border-bottom: none;
+    }
+
+    /* CONTACT */
+    .contact {
+      background: #073b8c;
+      color: white;
+    }
+
+    .contact .section-title {
+      color: white;
+    }
+
+    .contact-box {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+      text-align: center;
+    }
+
+    .contact-item {
+      background: rgba(255,255,255,.1);
+      padding: 25px;
+      border-radius: 15px;
+    }
+
+    .contact-item h3 {
+      color: #ffd43b;
+      margin-bottom: 10px;
+    }
+
+    .contact-item a {
+      color: white;
+      text-decoration: none;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #03275f;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    /* MOBILE */
+    @media (max-width: 768px) {
+
+      nav {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      nav ul {
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .hero h1 {
+        font-size: 38px;
+      }
+
+      .hero p {
+        font-size: 17px;
+      }
+
+      .about {
+        flex-direction: column;
+      }
+
+      .cards {
+        grid-template-columns: 1fr;
+      }
+
+      .contact-box {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav>
+    <div class="logo">
+      VIDHYADAN <span>ACADEMY</span>
+    </div>
+
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#academics">Academics</a></li>
+      <li><a href="#notices">Notices</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div>
+      <h1>VIDHYADAN ACADEMY</h1>
+
+      <p>
+        Education • Discipline • Excellence
+      </p>
+
+      <p>
+        Palothar, Datia, Madhya Pradesh
+      </p>
+
+      <a href="#about" class="btn">Explore School</a>
+      <a href="#contact" class="btn">Contact Us</
